@@ -19,11 +19,11 @@ export default function Register() {
   })
 
  const initialValues = {
-  name: 'Youssef',
-  email: 'Youssef@gmail.com',
-  password: '123456',
-  rePassword: '123456',
-  phone: '01149089876',
+  name: '',
+  email: '',
+  password: '',
+  rePassword: '',
+  phone: '',
  }
  function onSubmit(){ 
   setisLoading(true)
