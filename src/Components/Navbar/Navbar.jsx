@@ -75,11 +75,9 @@ export default function MyNav() {
           <Link to="/login">Login</Link>
         </NavbarItem>
         <NavbarItem>
-        <Button color="primary" variant="flat">
         <Link to="/register">
             Sign Up
            </Link>
-        </Button>
         </NavbarItem>
       </NavbarContent>
 }
