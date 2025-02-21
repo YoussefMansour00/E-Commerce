@@ -71,10 +71,10 @@ export default function MyNav() {
       </NavbarContent>
       :
         <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="hidden lg:flex bg-blue-500 p-2 rounded-lg text-white">
           <Link to="/login">Login</Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem className="lg:flex bg-blue-500 p-2 rounded-lg text-white">
         <Link to="/register">
             Sign Up
            </Link>
