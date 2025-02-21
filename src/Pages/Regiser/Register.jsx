@@ -61,7 +61,7 @@ export default function Register() {
     <Input isInvalid={errors.email && touched.email} errorMessage={errors.email} value={values.email} onChange={handleChange} onBlur={handleBlur} variant='bordered' label="Email" type="email" name='email'/>
     </div>
     <div className=' col-span-2 md:col-span-1'>
-    <Input   value={values.password} onChange={handleChange} onBlur={handleBlur} variant='bordered' label="Password" type="password" name='password'/>
+    <Input isInvalid={errors.password && touched.password} errorMessage={errors.password} value={values.password} onChange={handleChange} onBlur={handleBlur} variant='bordered' label="Password" type="password" name='password'/>
     </div>
     <div className=' col-span-2 md:col-span-1'>
     <Input isInvalid={errors.rePassword && touched.rePassword} errorMessage={errors.rePassword} value={values.rePassword} onChange={handleChange} onBlur={handleBlur} variant='bordered' label="repassword" type="password" name='rePassword'/>
