@@ -18,9 +18,11 @@ export default function Register() {
       password: Yup.string().required('Password is required').matches(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, 'Password must be at least 8 characters long and contain at least one letter and one number'),
     })
  const initialValues = {
-  email: 'koki12@gmail.com',
-  password: '1234567a',
+  email: '',
+  password: '',
  }
+ //koki12@gmail.com
+ //1234567a
   function onSubmit(){ 
   setisLoading(true)
    axios.post('https://ecommerce.routemisr.com/api/v1/auth/signin',values).then(({data})=>{
